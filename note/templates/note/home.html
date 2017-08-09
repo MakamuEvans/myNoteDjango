@@ -1,0 +1,60 @@
+{% extends 'note/index.html' %}
+{% load staticfiles %}
+{% block title %}
+    Home Yow
+{% endblock %}
+{% block body %}
+    <img src="{% static 'note/images/note.jpg' %}" style="max-height: 100px;width: auto">
+    <div class="row">
+        <h2 class="head">Who are we?</h2>
+        <div class="col-md-8 col-md-offset-2">
+            <p>
+                myNote if a free to use application available currently in the Android platform.<br>
+                Developed in 2017 by makamu evans, myNote ensures your days are organized and well documented.
+                Your only task is to tell us about your schedule and let us organize it for you; just worry about your
+                hustle.<br>
+            <h4>How cool </h4>
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <h2 class="head">Why myNote?</h2>
+        <div class="col-md-4 why head">
+            <i class="fa fa-calendar-check-o"></i>
+            <h5>All your schedule and tasks at hand, together with their progress monitired on a single place</h5>
+        </div>
+        <div class="col-md-4 why head">
+            <i class="fa fa-bell-o why"></i>
+            <h5>Set reminders and never miss those important moments in your life, your appointments and all their
+                analysis right in front of you</h5>
+        </div>
+        <div class="col-md-4 why head">
+            <i class="fa fa-cloud-upload"></i>
+            <h5>Back up all your notes to the cloud, so you never lose any important data. Access it throught all
+                devices via our web portal</h5>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="head">Download our Android App today!</h2>
+        <img src="{% static 'note/images/play-store.png' %}" style="max-height: 100px;width: auto">
+    </div>
+    <div class="row">
+        <h2 class="head">Contact us</h2>
+        <div class="col-md-8 col-md-offset-2">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name(s)">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your email">
+                </div>
+                <div class="form-group">
+            <textarea class="form-control">
+
+        </textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
